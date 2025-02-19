@@ -1,11 +1,18 @@
 <?php
 
-namespace App\Models;
+namespace App\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class aboutme extends Model
+class UserController extends Controller
 {
-    use HasFactory;
-}
+    public function submitForm(Request $request) {
+        $request->validate ([
+            'name' => 'required|string|max:225'
+            'email' => 'required|email|unique:users'
+        ]);
+
+        
+    }
+};

@@ -6,12 +6,13 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    //Handling Post Request
+    // Handling Post Request
 
-    public function sumbitForm(Request $request){
+    public function submitForm(Request $request)
+    {
         return response()->json([
-            'message' -> 'Form submitted successfully!',
-            'data' => $request ->all() 
+            'message' => 'Form submitted successfully!',
+            'data' => $request->all() 
         ]);
     }
 }

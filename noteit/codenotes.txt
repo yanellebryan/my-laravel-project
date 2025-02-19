@@ -1,0 +1,17 @@
+//*git remote add origin https://github.com/username/repository.git
+
+git push -u origin master
+
+git push -u origin main
+
+git push
+
+git init - Initialize a Git repository
+git add . - Add all files to the staging area
+git commit -m "message" - Commit changes
+git remote add origin <repository-url> - Link your local repository to GitHub
+git push -u origin main - */
+
+
+--This is for the refresh in mysql
+PS Z:\laravel project\example-app> php artisan migrate:refresh

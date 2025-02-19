@@ -18,7 +18,7 @@ class WelcomeController extends Controller
 
     // Redirect to the route named 'greeting'
     public function redirectGreeting() {
-        return redirect()->route('greeting'); // Ensure 'greeting' route exists
+        return redirect()->route('hello'); // Ensure 'greeting' route exists
     }
     // Other methods can be added here
 }
