@@ -45,3 +45,6 @@ Route::post('/submit-form', [UserController::class, 'submitForm']);
 // PUT Request
 Route::put('/update-user/{id}', [UserController::class, 'userUpdate']);
 
+Route::get('/about', function () {
+    return view('about');
+});

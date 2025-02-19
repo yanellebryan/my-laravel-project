@@ -16,6 +16,99 @@ git push -u origin main - */
 --This is for the refresh in mysql
 PS Z:\laravel project\example-app> php artisan migrate:refresh
 PS Z:\laravel project\example-app> git branch -M main   
- 
+
 PS Z:\laravel project\example-app> git remote add origin https://githuberror: remote origin already exists.
 PS Z:\laravel project\example-app> git push -u origin main
+
+
+Steps to Complete the Task
+1. Create a New Blade Page ("About Me")
+Open your Laravel project in VS Code.
+Navigate to the resources/views folder.
+Create a new file called about.blade.php:
+sh
+Copy
+Edit
+touch resources/views/about.blade.php
+Open about.blade.php and add the following content:
+blade
+Copy
+Edit
+@extends('layouts.app')
+
+@section('content')
+    @include('header') <!-- Include Header -->
+
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Welcome to my About Me page. Here, you will find more information about me.</p>
+    </div>
+
+    @include('footer') <!-- Include Footer -->
+@endsection
+2. Create Header and Footer Blade Files
+Header (resources/views/header.blade.php)
+
+blade
+Copy
+Edit
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+        </ul>
+    </nav>
+</header>
+Footer (resources/views/footer.blade.php)
+
+blade
+Copy
+Edit
+<footer>
+    <p>© 2025 My Website. All rights reserved.</p>
+</footer>
+3. Define a Route for "About Me" Page
+Open routes/web.php and add the following route:
+php
+Copy
+Edit
+Route::get('/about', function () {
+    return view('about');
+});
+4. Test the "About Me" Page in Browser
+Start the Laravel server:
+sh
+Copy
+Edit
+php artisan serve
+Open your browser and go to:
+arduino
+Copy
+Edit
+http://127.0.0.1:8000/about
+Ensure that the header and footer are included properly.
+5. Commit & Push to GitHub
+Open the terminal in VS Code.
+Check the Git status:
+sh
+Copy
+Edit
+git status
+Add all new files:
+sh
+Copy
+Edit
+git add .
+Commit the changes with the required message:
+sh
+Copy
+Edit
+git commit -m "About Me Page"
+Push the code to GitHub:
+sh
+Copy
+Edit
+git push origin main
+(If your branch is different, replace main with your branch name.)
+6. Take Screenshots
