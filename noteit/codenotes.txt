@@ -15,3 +15,7 @@ git push -u origin main - */
 
 --This is for the refresh in mysql
 PS Z:\laravel project\example-app> php artisan migrate:refresh
+PS Z:\laravel project\example-app> git branch -M main   
+ 
+PS Z:\laravel project\example-app> git remote add origin https://githuberror: remote origin already exists.
+PS Z:\laravel project\example-app> git push -u origin main
