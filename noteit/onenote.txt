@@ -203,3 +203,24 @@ class CreatePostTable extends Migration
 }
 
 ------end
+
+
+
+# GitHub
+
+push changes from visual studio 
+
+```php
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
+*(Replace `main` with your actual branch name if different.)*
+
+—fetch the lastest updates from Github and merge them into local files 
+
+```php
+git pull origin main
+
+```

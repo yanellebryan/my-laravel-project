@@ -3,22 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Skill; // Make sure you include the necessary model import
 
 class PageController extends Controller
 {
-    public function home() {
-        $home = Home::all();
-        return view('pages/home'), compact('home'));
-    }
+    //public function home() {
+   //     $home = Home::all();
+   //     return view('pages.home', compact('home')); // Corrected syntax
+   // }
 
     public function skills() {
-        return view('skills');
+        $skill = Skill::all();
+        return view('pages/skills', compact('skills'));
     }
 
     public function gallery() {
-        return view('gallery');
+        return view('pages/gallery');
     }
-
-
-    
 }
